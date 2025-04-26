@@ -47,5 +47,17 @@ namespace EP_Borda.Controllers
             ViewBag.Teams = _context.Teams.ToList();
             return View(player);
         }
+
+        // GET: Players/List
+        public async Task<IActionResult> List()
+        {
+            var jugadoresConEquipos = await _context.Assignments
+                .Include(a => a.Player)
+                .Include(a => a.Team)
+                .ToListAsync();
+
+            return View(jugadoresConEquipos);
+        }
+
     }
 }
