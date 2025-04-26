@@ -268,3 +268,4 @@ D:\EP Borda\obj\Debug\net8.0\refint\EP Borda.dll
 D:\EP Borda\obj\Debug\net8.0\EP Borda.pdb
 D:\EP Borda\obj\Debug\net8.0\EP Borda.genruntimeconfig.cache
 D:\EP Borda\obj\Debug\net8.0\ref\EP Borda.dll
+D:\EP Borda\obj\Debug\net8.0\EP Borda.sourcelink.json

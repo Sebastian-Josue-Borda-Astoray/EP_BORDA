@@ -1,0 +1,43 @@
+@model EP_Borda.Models.Player
+@{
+    ViewData["Title"] = "Registrar Jugador";
+    var teams = ViewBag.Teams as List<EP_Borda.Models.Team>;
+}
+
+<h2>Registrar Jugador</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" class="form-control" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Edad"></label>
+        <input asp-for="Edad" class="form-control" />
+        <span asp-validation-for="Edad" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Posicion"></label>
+        <input asp-for="Posicion" class="form-control" />
+        <span asp-validation-for="Posicion" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Equipo</label>
+        <select name="TeamId" class="form-control">
+            @foreach (var team in teams)
+            {
+                <option value="@team.Id">@team.Nombre</option>
+            }
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
