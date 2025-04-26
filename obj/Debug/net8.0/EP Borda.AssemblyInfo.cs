@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EP Borda")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76b8340e3fb2c82fe0a88b5139fff11aa00e1c88")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6c9b029dd7f3cd8734403d9cd1a80ca3121e0a2")]
 [assembly: System.Reflection.AssemblyProductAttribute("EP Borda")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EP Borda")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
