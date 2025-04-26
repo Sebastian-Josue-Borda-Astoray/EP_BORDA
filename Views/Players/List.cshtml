@@ -1,0 +1,29 @@
+@model IEnumerable<EP_Borda.Models.Assignment>
+
+@{
+    ViewData["Title"] = "Listado de Jugadores con Equipos";
+}
+
+<h2>Listado de Jugadores</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Jugador</th>
+            <th>Edad</th>
+            <th>Posición</th>
+            <th>Equipo</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var assignment in Model)
+        {
+            <tr>
+                <td>@assignment.Player?.Nombre</td>
+                <td>@assignment.Player?.Edad</td>
+                <td>@assignment.Player?.Posicion</td>
+                <td>@assignment.Team?.Nombre</td>
+            </tr>
+        }
+    </tbody>
+</table>
