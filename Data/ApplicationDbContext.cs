@@ -2,7 +2,7 @@
 using EP_Borda.Models;
 
 namespace EP_Borda.Data
-{
+{       
     public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
